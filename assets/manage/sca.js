@@ -653,4 +653,76 @@ $("#typecho-option-item-AdControl4Url-74").hide();
 }
 })
 
+//图片
+//水印设置
+$(document).ready(function(){
+$('#Watermark-0-136').change(function(){
+var a18=$(this).children('option:selected').val();
+
+if(a18=='1'){
+$("#typecho-option-item-WatermarkType-136").show();
+$("#typecho-option-item-waterMarkName-137").show();
+$("#typecho-option-item-waterMarkKd-138").show();
+$("#typecho-option-item-waterMarkTextSize-139").show();
+$("#typecho-option-item-waterMarkTextColor-140").show();
+$("#typecho-option-item-waterMarkTextBackground-141").show();
+$("#typecho-option-item-waterMarkLocation-142").show();
+$("#typecho-option-item-waterMarkOpacity-143").show();
+$("#typecho-option-item-waterMarkMargin-144").show();
+$("#typecho-option-item-waterMarkOutput-145").show();
+}
+else{
+$("#typecho-option-item-WatermarkType-136").hide();
+$("#typecho-option-item-waterMarkName-137").hide();
+$("#typecho-option-item-waterMarkKd-138").hide();
+$("#typecho-option-item-waterMarkTextSize-139").hide();
+$("#typecho-option-item-waterMarkTextColor-140").hide();
+$("#typecho-option-item-waterMarkTextBackground-141").hide();
+$("#typecho-option-item-waterMarkLocation-142").hide();
+$("#typecho-option-item-waterMarkOpacity-143").hide();
+$("#typecho-option-item-waterMarkMargin-144").hide();
+$("#typecho-option-item-waterMarkOutput-145").hide();
+}
+})
+var options18=$("#Watermark-0-136 option:selected").val();
+if(options18 !== '1'){
+$("#typecho-option-item-WatermarkType-136").hide();
+$("#typecho-option-item-waterMarkName-137").hide();
+$("#typecho-option-item-waterMarkKd-138").hide();
+$("#typecho-option-item-waterMarkTextSize-139").hide();
+$("#typecho-option-item-waterMarkTextColor-140").hide();
+$("#typecho-option-item-waterMarkTextBackground-141").hide();
+$("#typecho-option-item-waterMarkLocation-142").hide();
+$("#typecho-option-item-waterMarkOpacity-143").hide();
+$("#typecho-option-item-waterMarkMargin-144").hide();
+$("#typecho-option-item-waterMarkOutput-145").hide();
+}
+})
+
+
+
+//音乐歌单
+$(document).ready(function(){
+$('#music-0-126').change(function(){
+var a20=$(this).children('option:selected').val();
+
+if(a20=='1'){
+$("#typecho-option-item-music_bof-126").show();
+$("#typecho-option-item-music_sxj-127").show();
+$("#typecho-option-item-music_musicList-128").show();
+}
+else{
+$("#typecho-option-item-music_bof-126").hide();
+$("#typecho-option-item-music_sxj-127").hide();
+$("#typecho-option-item-music_musicList-128").hide();
+}
+})
+var options20=$("#music-0-126 option:selected").val();
+if(options20 !== '1'){
+$("#typecho-option-item-music_bof-126").hide();
+$("#typecho-option-item-music_sxj-127").hide();
+$("#typecho-option-item-music_musicList-128").hide();
+}
+})
+
 })
